@@ -105,7 +105,7 @@ class RegistrationController extends Controller
      *
      * @return array
      */
-    public function indexAction(Request $resquest)
+    public function indexAction()
     {
         $this->checkAccess();
 

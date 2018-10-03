@@ -1,7 +1,7 @@
 import $ from 'jquery'
-import angular from 'angular/index'
-import toastr from 'toastr/toastr'
-import 'confirm-bootstrap/confirm-bootstrap.js'
+//import angular from 'angular/index'
+//import toastr from 'toastr/toastr'
+//import 'confirm-bootstrap/confirm-bootstrap.js'
 
 /* global Translator */
 

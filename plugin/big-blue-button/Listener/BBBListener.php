@@ -87,25 +87,6 @@ class BBBListener
     }
 
     /**
-     * @DI\Observe("create_form_claroline_big_blue_button")
-     *
-     * @param CreateFormResourceEvent $event
-     */
-    public function onCreationForm(CreateFormResourceEvent $event)
-    {
-        $form = $this->formFactory->create(new BBBType(), new BBB());
-        $content = $this->templating->render(
-            'ClarolineBigBlueButtonBundle:BBB:createForm.html.twig',
-            [
-                'form' => $form->createView(),
-                'resourceType' => 'claroline_big_blue_button',
-            ]
-        );
-        $event->setResponseContent($content);
-        $event->stopPropagation();
-    }
-
-    /**
      * @DI\Observe("create_claroline_big_blue_button")
      *
      * @param CreateResourceEvent $event
